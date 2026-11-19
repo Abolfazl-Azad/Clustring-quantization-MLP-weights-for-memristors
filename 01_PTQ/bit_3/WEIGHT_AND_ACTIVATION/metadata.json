@@ -1,0 +1,25 @@
+{
+  "stage": "PTQ",
+  "method": "WEIGHT_AND_ACTIVATION",
+  "bitwidth": 3,
+  "weight_bits": 3,
+  "activation_bits": 3,
+  "seed": 42,
+  "checkpoint_sha256": "ecc8f8d50cd2716ef4dc62ea6e7b30b3447d6ad2b3ba162f8065867f81145f4e",
+  "validation_indices_file": "../../../../data_split/validation_indices.npy",
+  "calibration_samples": 1024,
+  "calibration_source": "training split only; deterministic eval transform",
+  "activation_sites": [
+    "features.3",
+    "features.7",
+    "features.10",
+    "features.13",
+    "features.17",
+    "classifier.1",
+    "classifier.3"
+  ],
+  "weight_quantizer": "symmetric signed uniform per-output-channel; qmax=2^(b-1)-1; at 2 bits the representable codes are {-1,0,+1}",
+  "activation_quantizer": "unsigned uniform per-site min/max; fixed calibration scale",
+  "execution": "fake quantization / quantize-dequantize; operators execute in FP32",
+  "test_set_used": false
+}
