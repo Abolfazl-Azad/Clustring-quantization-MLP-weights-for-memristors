@@ -1,0 +1,7 @@
+{
+  "seed": 42,
+  "training_count": 45000,
+  "validation_count": 5000,
+  "calibration_count": 1024,
+  "calibration_subset_of": "training partition only"
+}

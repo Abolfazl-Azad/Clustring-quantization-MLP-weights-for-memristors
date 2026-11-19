@@ -1,0 +1,43 @@
+{
+  "architecture": "VGG8_CIFAR10_5conv_3fc_bn",
+  "checkpoint": "/content/vgg8_baseline_input/VGG8_QAT_INPUT/best.pt",
+  "checkpoint_sha256": "ecc8f8d50cd2716ef4dc62ea6e7b30b3447d6ad2b3ba162f8065867f81145f4e",
+  "data_dir": "/content/gdrive_vgg8/MyDrive/cifar10_data",
+  "bits": [
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2
+  ],
+  "stages": [
+    "ptq",
+    "qat"
+  ],
+  "methods": [
+    "WEIGHT_ONLY",
+    "ACTIVATION_ONLY",
+    "WEIGHT_AND_ACTIVATION"
+  ],
+  "epochs": 10,
+  "learning_rates_by_bit": {
+    "8": 5e-06,
+    "7": 5e-06,
+    "6": 1e-05,
+    "5": 5e-06,
+    "4": 0.0001,
+    "3": 0.0001,
+    "2": 0.0001
+  },
+  "weight_decay": 5e-05,
+  "bn_stats_mode": "freeze",
+  "seed": 42,
+  "batch_size": 128,
+  "num_workers": 2,
+  "validation_size": 5000,
+  "calibration_size": 1024,
+  "device": "cuda",
+  "test_set_used": false
+}

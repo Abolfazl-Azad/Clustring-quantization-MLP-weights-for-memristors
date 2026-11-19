@@ -1,0 +1,20 @@
+{
+  "PTQ_runs_found": 21,
+  "QAT_runs_found": 21,
+  "matched_comparisons": 21,
+  "expected_runs_per_stage": 21,
+  "bits": [
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2
+  ],
+  "methods": [
+    "WEIGHT_ONLY",
+    "ACTIVATION_ONLY",
+    "WEIGHT_AND_ACTIVATION"
+  ]
+}
