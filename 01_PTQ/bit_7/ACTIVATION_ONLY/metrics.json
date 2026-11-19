@@ -1,0 +1,7 @@
+{
+  "loss": 0.5222145318984985,
+  "accuracy_percent": 90.48,
+  "correct": 4524,
+  "samples": 5000,
+  "error": 476
+}
