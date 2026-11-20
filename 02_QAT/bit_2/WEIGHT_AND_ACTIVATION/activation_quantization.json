@@ -1,0 +1,44 @@
+{
+  "features.3": {
+    "clip_max": 19.980546951293945,
+    "bits": 2,
+    "unsigned_qmax": 3,
+    "scale": 6.6601823170979815
+  },
+  "features.7": {
+    "clip_max": 10.407391548156738,
+    "bits": 2,
+    "unsigned_qmax": 3,
+    "scale": 3.469130516052246
+  },
+  "features.10": {
+    "clip_max": 5.630792140960693,
+    "bits": 2,
+    "unsigned_qmax": 3,
+    "scale": 1.8769307136535645
+  },
+  "features.13": {
+    "clip_max": 2.9911792278289795,
+    "bits": 2,
+    "unsigned_qmax": 3,
+    "scale": 0.9970597426096598
+  },
+  "features.17": {
+    "clip_max": 2.922027826309204,
+    "bits": 2,
+    "unsigned_qmax": 3,
+    "scale": 0.9740092754364014
+  },
+  "classifier.1": {
+    "clip_max": 8.797359466552734,
+    "bits": 2,
+    "unsigned_qmax": 3,
+    "scale": 2.932453155517578
+  },
+  "classifier.3": {
+    "clip_max": 7.258337497711182,
+    "bits": 2,
+    "unsigned_qmax": 3,
+    "scale": 2.419445832570394
+  }
+}
